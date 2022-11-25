@@ -20,7 +20,7 @@ We will be using expo go for this project. Expo is a set of tools and services b
     cd Beacon-Buddy/
     ```
 
-6. Before running on the web, install the below dependencies first
+6. Before running, install the below dependencies
     ```
     npx expo install react-native-web@~0.18.9 react-dom@18.1.0
     ```
