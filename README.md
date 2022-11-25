@@ -13,6 +13,10 @@ We will be using expo go for this project. Expo is a set of tools and services b
     ```
     npm i -g expo-cli
     ```
+    then
+    ```
+    npm install
+    ```
 4. Open up the project directory with your favorite IDE. 
    We do recommend using VS CODE and adding these two extensions `React Native Tools` and `Babel JavaScript`.
 5. Navigate in to `BeaconBuddy-App`.
