@@ -15,11 +15,7 @@ We will be using expo go for this project. Expo is a set of tools and services b
     ```
 4. Open up the project directory with your favorite IDE. 
    We do recommend using VS CODE and adding these two extensions `React Native Tools` and `Babel JavaScript`.
-5. Fire up your terminal and install Expo running
-    ```
-    npm i -g expo-cli
-    ```
-    then
+5. Fire up your terminal and install the dependencies with
     ```
     npm install
     ```
