@@ -9,11 +9,13 @@ We will be using expo go for this project. Expo is a set of tools and services b
     ```
     git clone https://github.com/alphaka/Beacon-Buddy
     ```
-3. Navigate in to `BeaconBuddy-App`.
+3. Navigate in to `BeaconBuddy-App`. 
     ```
     cd Beacon-Buddy/
     ```
-4. Fire up your terminal and install Expo running
+4. Open up the project directory with your favorite IDE. 
+   We do recommend using VS CODE and adding these two extensions `React Native Tools` and `Babel JavaScript`.
+5. Fire up your terminal and install Expo running
     ```
     npm i -g expo-cli
     ```
@@ -21,8 +23,6 @@ We will be using expo go for this project. Expo is a set of tools and services b
     ```
     npm install
     ```
-5. Open up the project directory with your favorite IDE. 
-   We do recommend using VS CODE and adding these two extensions `React Native Tools` and `Babel JavaScript`.
 6. Before running, install the below dependencies
     ```
     npx expo install react-native-web@~0.18.9 react-dom@18.1.0
