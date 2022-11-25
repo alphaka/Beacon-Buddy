@@ -7,7 +7,7 @@ We will be using expo go for this project. Expo is a set of tools and services b
 2. Git clone this repo
   
     ```
-    git clone https://github.com/alphaka/BeaconBuddy/
+    git clone https://github.com/alphaka/Beacon-Buddy
     ```
 3. Fire up your terminal and install Expo running
     ```
@@ -17,7 +17,7 @@ We will be using expo go for this project. Expo is a set of tools and services b
    We do recommend using VS CODE and adding these two extensions `React Native Tools` and `Babel JavaScript`.
 5. Navigate in to `BeaconBuddy-App`.
     ```
-    cd BeaconBuddy-App
+    cd Beacon-Buddy/
     ```
 
 6. Before running on the web, install the below dependencies first
