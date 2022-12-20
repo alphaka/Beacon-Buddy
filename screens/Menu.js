@@ -50,7 +50,10 @@ const Menu = () => {
       >
         <View style={styles.buttonGroup}>
           <View style={styles.buttons}>
-            <View style={styles.mediumButtonMedium}>
+            <Pressable 
+              style={styles.mediumButtonMedium}
+              onPress={() => navigation.navigate("ActiveBeacons")}
+              >
               <View style={styles.master}>
                 <LinearGradient
                   style={styles.labelIconLeftChevron}
@@ -82,7 +85,7 @@ const Menu = () => {
                   />
                 </LinearGradient>
               </View>
-            </View>
+            </Pressable>
             <Pressable
               style={[styles.mediumButtonMedium1, styles.ml10]}
               onPress={() => navigation.navigate("BeaconSubmission1")}
@@ -266,7 +269,10 @@ const Menu = () => {
           resizeMode="cover"
           source={require("../assets/path2.png")}
         />
-        <View style={styles.logoBeacon}>
+        <Pressable 
+          style={styles.logoBeacon}
+          onPress={() => navigation.navigate("SecondMenuBeacons")}
+        >
           <Image
             style={styles.vectorIcon}
             resizeMode="cover"
@@ -283,7 +289,7 @@ const Menu = () => {
             source={require("../assets/vector-5.png")}
           />
           <Text style={styles.b}>B</Text>
-        </View>
+        </Pressable>
       </View>
       <Pressable style={styles.back}>
         <View style={styles.frameView1}>
@@ -305,7 +311,7 @@ const Menu = () => {
 
 const styles = StyleSheet.create({
   ml8: {
-    marginLeft: 8,
+    marginLeft: 100,
   },
   ml10: {
     marginLeft: 10,
@@ -698,10 +704,10 @@ const styles = StyleSheet.create({
     position: "absolute",
     height: "38.39%",
     width: "52.82%",
-    top: "32.46%",
+    top: "43%",
     right: "24.19%",
     bottom: "29.15%",
-    left: "22.99%",
+    left: "35%",
   },
   kitchen: {
     position: "absolute",
