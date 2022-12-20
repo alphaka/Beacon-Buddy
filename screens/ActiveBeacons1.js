@@ -2110,7 +2110,7 @@ const styles = StyleSheet.create({
     color: "#fff",
     textAlign: "center",
     width: 9,
-    height: 11,
+    height: 18,
   },
   logoBeacon: {
     position: "absolute",

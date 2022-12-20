@@ -33,7 +33,7 @@ const SecondMenuBeacons = () => {
           />
           <Pressable
             style={styles.whatsAppImage20221215At6}
-            onPress={() => navigation.navigate("MenuFootball")}
+            onPress={() => navigation.navigate("Menu")}
           >
             <Image
               style={styles.icon}

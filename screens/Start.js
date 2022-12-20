@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     color: "#aae0fa",
     textAlign: "center",
     width: 42,
-    height: 50,
+    height: 90,
   },
   logoBeacon: {
     position: "absolute",

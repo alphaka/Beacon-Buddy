@@ -66,14 +66,13 @@ const Menu = () => {
                         source={require("../assets/wrapper.png")}
                       />
                     </View>
-                    <Text style={[styles.label, styles.ml8]}>Find Beacon</Text>
-                    <View style={[styles.placeholder1, styles.ml8]}>
-                      <Image
-                        style={styles.wrapperIcon1}
-                        resizeMode="cover"
-                        source={require("../assets/wrapper1.png")}
-                      />
-                    </View>
+                    
+                  <Pressable onPress={() => navigation.navigate("ActiveBeacons")}>
+                    <Text style={[styles.label]}>Find Beacon</Text>
+                  </Pressable>
+
+                    
+
                   </View>
                   <Image
                     style={styles.arrowsDownArrow}
@@ -192,28 +191,6 @@ const Menu = () => {
         <View style={styles.homeIndicator3} />
       </View>
       <View style={styles.barsStatusBariPhoneLight}>
-        <View style={styles.battery}>
-          <View style={styles.border} />
-          <Image
-            style={styles.capIcon}
-            resizeMode="cover"
-            source={require("../assets/cap.png")}
-          />
-          <View style={styles.capacity} />
-        </View>
-        <Image
-          style={styles.wifiIcon}
-          resizeMode="cover"
-          source={require("../assets/wifi.png")}
-        />
-        <Image
-          style={styles.cellularConnectionIcon}
-          resizeMode="cover"
-          source={require("../assets/cellular-connection.png")}
-        />
-        <View style={styles.timeStyle}>
-          <Text style={styles.time}>9:41</Text>
-        </View>
       </View>
       <View style={styles.groupsLarge}>
         <View style={styles.line}>
@@ -299,13 +276,45 @@ const Menu = () => {
           </Pressable>
         </View>
       </Pressable>
+      <Pressable
+        style={styles.more1}
+        onPress={() => navigation.navigate("SecondMenuBeacons")}
+      >
+        <LinearGradient
+          style={styles.rectangle3}
+          locations={[0, 1]}
+          colors={["#26272c", "#1f2026"]}
+        />
+        <Image
+          style={styles.pathIcon1}
+          resizeMode="cover"
+          source={require("../assets/path2.png")}
+        />
+        <View style={styles.logoBeacon}>
+          <Image
+            resizeMode="cover"
+            source={require("../assets/vector-3.png")}
+          />
+          <Image
+            style={styles.vectorIcon1}
+            resizeMode="cover"
+            source={require("../assets/vector-4.png")}
+          />
+          <Image
+            style={styles.vectorIcon3}
+            resizeMode="cover"
+            source={require("../assets/vector-5.png")}
+          />
+          <Text style={styles.b}>B</Text>
+        </View>
+      </Pressable>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   ml8: {
-    marginLeft: 8,
+    marginLeft: 100,
   },
   ml10: {
     marginLeft: 10,
@@ -417,12 +426,12 @@ const styles = StyleSheet.create({
   },
   label: {
     position: "relative",
-    fontSize: 14,
+    fontSize: 20,
     lineHeight: 20,
-    fontWeight: "600",
-    fontFamily: "Archivo",
+    fontWeight: "500",
     color: "#fff",
-    textAlign: "left",
+    textAlign: "center",
+    justifyContent: "center",
   },
   wrapperIcon1: {
     alignSelf: "stretch",
@@ -696,12 +705,12 @@ const styles = StyleSheet.create({
   },
   basketballIcon: {
     position: "absolute",
-    height: "38.39%",
-    width: "52.82%",
-    top: "32.46%",
+    height: "59.39%",
+    width: "65.82%",
+    top: "36.46%",
     right: "24.19%",
     bottom: "29.15%",
-    left: "22.99%",
+    left: "26.99%",
   },
   kitchen: {
     position: "absolute",
@@ -1055,6 +1064,13 @@ const styles = StyleSheet.create({
     width: 20,
     height: 26,
   },
+  vectorIcon3: {
+    position: "absolute",
+    top: -1,
+    left: 7,
+    width: 20,
+    height: 26,
+  },
   b: {
     position: "absolute",
     top: 1,
@@ -1064,7 +1080,7 @@ const styles = StyleSheet.create({
     color: "#fff",
     textAlign: "center",
     width: 9,
-    height: 11,
+    height: 18,
   },
   logoBeacon: {
     position: "absolute",

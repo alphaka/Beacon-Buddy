@@ -146,10 +146,11 @@ const ActiveBeacons = () => {
             <View style={styles.content1}>
               <View style={styles.textFrame}>
                 <View style={styles.elementsTextBoxTableRow}>
-                  <Text style={styles.title}>John V. Lindsay</Text>
+                  <Text style={styles.title}>John V.{"\n"}
+                  Lindsay</Text>
                   <Text style={styles.subtitle}>
                     <Text style={styles.newYorkNY1}>
-                      <Text style={styles.newYorkNY}>New York, NY</Text>
+                      <Text style={styles.newYorkNY}>New York, N</Text>
                     </Text>
                     <Text style={styles.court11}>
                       <Text style={styles.court1}>Court 1</Text>
@@ -159,15 +160,9 @@ const ActiveBeacons = () => {
                 <View style={styles.controlFrame}>
                   <View style={styles.chevron}>
                     <View style={styles.content}>
-                      <Text style={styles.detail}>10:40 AM</Text>
-                      <Text style={[styles.info, styles.mt2]}>
-                        <Text style={styles.aCTIVE1}>
-                          <Text style={styles.aCTIVE}>ACTIVE</Text>
-                        </Text>
-                        <Text style={styles.in100m1}>
-                          <Text style={styles.in100m}>in 100m</Text>
-                        </Text>
-                      </Text>
+                    <Text style={styles.detail1}>10:40PM</Text>
+                      <Text style={styles.aCTIVE2}>ACTIVE</Text>
+                      <Text style={styles.text2}>12/24</Text>
                     </View>
                   </View>
                 </View>
@@ -231,7 +226,7 @@ const ActiveBeacons = () => {
           <Image
             style={styles.ovalCopyIcon}
             resizeMode="cover"
-            source={require("../assets/oval-copy.png")}
+            source={require("../assets/oval-copy-2.png")}
           />
           <Image
             style={styles.ovalIcon}
@@ -307,7 +302,7 @@ const ActiveBeacons = () => {
                       <Text style={styles.newYorkNY2}>New York, NY</Text>
                     </Text>
                     <Text style={styles.court13}>
-                      <Text style={styles.court12}>Court 1</Text>
+                      <Text style={styles.court12}> Court 1</Text>
                     </Text>
                   </Text>
                 </View>
@@ -315,14 +310,8 @@ const ActiveBeacons = () => {
                   <View style={styles.chevron1}>
                     <View style={styles.content2}>
                       <Text style={styles.detail1}>8:30PM</Text>
-                      <Text style={[styles.info1, styles.mt2]}>
-                        <Text style={styles.aCTIVE3}>
-                          <Text style={styles.aCTIVE2}>ACTIVE</Text>
-                        </Text>
-                        <Text style={styles.text3}>
-                          <Text style={styles.text2}>12/24</Text>
-                        </Text>
-                      </Text>
+                      <Text style={styles.aCTIVE2}>ACTIVE</Text>
+                      <Text style={styles.text2}>12/24</Text>
                     </View>
                   </View>
                 </View>
@@ -1233,7 +1222,7 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
     flexDirection: "row",
     paddingHorizontal: 0,
-    paddingTop: 15,
+    paddingTop: 5,
     paddingBottom: 10,
     alignItems: "center",
     justifyContent: "flex-start",
@@ -1747,10 +1736,11 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
     flexDirection: "row",
     paddingHorizontal: 0,
-    paddingTop: 15,
+    paddingTop: 5,
     paddingBottom: 10,
     alignItems: "center",
     justifyContent: "flex-start",
+    
   },
   wrapperIcon8: {
     alignSelf: "stretch",
@@ -2127,7 +2117,7 @@ const styles = StyleSheet.create({
     color: "#fff",
     textAlign: "center",
     width: 9,
-    height: 11,
+    height: 20,
   },
   logoBeacon: {
     position: "absolute",
