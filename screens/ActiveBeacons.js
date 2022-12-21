@@ -36,11 +36,7 @@ const ActiveBeacons = () => {
               />
             </View>
           </View>
-          <Image
-            style={styles.batteryIcon}
-            resizeMode="cover"
-            source={require("../assets/battery3.png")}
-          />
+          
           <View style={styles.label}>
             <LinearGradient
               style={styles.rectangle1}

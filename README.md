@@ -38,5 +38,5 @@ We will be using expo go for this project. Expo is a set of tools and services b
 9. Enjoy!
 
 
-    Note: You can change your iOS simulator by selecting the simulutor, and nagivating to `File` > `Open Simulator` > `iOS X.X` > `iPhone Model You'd Like`!
-
+    Note: You can change your iOS simulator by selecting the simulutor, and nagivating to `File` > `Open Simulator` > `iOS X.X` > iPhone 13 Pro!
+    Bug: Please note, on our menu, click on the left side of the "Find Beacon Button" to access the Active Beacon Page.

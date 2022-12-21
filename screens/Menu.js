@@ -59,6 +59,7 @@ const Menu = () => {
                   <View style={styles.labelIconLeft}>
                     <Text style={[styles.label, styles.ml8]}>Find Beacon</Text>
                   </View>
+                  
                 </LinearGradient>
               </View>
             </View>
@@ -394,7 +395,7 @@ const styles = StyleSheet.create({
   labelIconLeft: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "flex-start",
+    justifyContent: "center",
   },
   arrowsDownArrow: {
     position: "relative",
@@ -511,7 +512,7 @@ const styles = StyleSheet.create({
   buttons: {
     alignSelf: "stretch",
     flexDirection: "row",
-    paddingHorizontal: 16,
+    paddingHorizontal: 14,
     paddingVertical: 0,
     alignItems: "center",
     justifyContent: "center",
@@ -555,8 +556,8 @@ const styles = StyleSheet.create({
     left: "50%",
     width: 357,
     flexDirection: "column",
-    alignItems: "flex-start",
-    justifyContent: "flex-start",
+    alignItems: "center",
+    justifyContent: "center",
   },
   boxingIcon: {
     position: "absolute",

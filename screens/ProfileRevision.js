@@ -27,16 +27,8 @@ const ProfileRevision = () => {
             />
             <View style={styles.capacity} />
           </View>
-          <Image
-            style={styles.wifiIcon}
-            resizeMode="cover"
-            source={require("../assets/wifi6.png")}
-          />
-          <Image
-            style={styles.cellularConnectionIcon}
-            resizeMode="cover"
-            source={require("../assets/cellular-connection.png")}
-          />
+          
+    
           <View style={styles.timeStyle}>
             <Text style={styles.time}>9:41</Text>
           </View>
