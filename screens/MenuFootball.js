@@ -282,7 +282,7 @@ const MenuFootball = () => {
 
 const styles = StyleSheet.create({
   ml8: {
-    marginLeft: 8,
+    marginLeft: 95,
   },
   ml10: {
     marginLeft: 10,
@@ -648,7 +648,7 @@ const styles = StyleSheet.create({
     top: "28.2%",
     right: "37.47%",
     bottom: "36.27%",
-    left: "0%",
+    left: "8%",
     maxWidth: "100%",
     overflow: "hidden",
     maxHeight: "100%",
@@ -660,7 +660,7 @@ const styles = StyleSheet.create({
     top: "35.07%",
     right: "7.18%",
     bottom: "42.18%",
-    left: "60.77%",
+    left: "55%",
     maxWidth: "100%",
     overflow: "hidden",
     maxHeight: "100%",
@@ -672,7 +672,7 @@ const styles = StyleSheet.create({
     top: "40.09%",
     right: "26.97%",
     bottom: "22.16%",
-    left: "-7.01%",
+    left: "30%",
     transform: [
       {
         rotate: "-22.23deg",

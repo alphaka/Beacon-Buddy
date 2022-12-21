@@ -43,10 +43,9 @@ const Menu = () => {
           source={require("../assets/monochrome--angle-left.png")}
         />
       </Pressable>
-      <TouchableOpacity
+      <Pressable
         style={styles.homerosterButtons}
-        activeOpacity={0.2}
-        onPress={() => navigation.navigate("SelectDay")}
+        onPress={() => navigation.navigate("ActiveBeacons")}
       >
         <View style={styles.buttonGroup}>
           <View style={styles.buttons}>
@@ -57,75 +56,15 @@ const Menu = () => {
                   locations={[0, 1]}
                   colors={["#0061c8", "#5aedff"]}
                 >
-                  <View style={styles.spacer} />
                   <View style={styles.labelIconLeft}>
-                    <View style={styles.placeholder}>
-                      <Image
-                        style={styles.wrapperIcon}
-                        resizeMode="cover"
-                        source={require("../assets/wrapper.png")}
-                      />
-                    </View>
-                    
-                  <Pressable onPress={() => navigation.navigate("ActiveBeacons")}>
-                    <Text style={[styles.label]}>Find Beacon</Text>
-                  </Pressable>
-
-                    
-
+                    <Text style={[styles.label, styles.ml8]}>Find Beacon</Text>
                   </View>
-                  <Image
-                    style={styles.arrowsDownArrow}
-                    resizeMode="cover"
-                    source={require("../assets/arrows--down-arrow.png")}
-                  />
                 </LinearGradient>
               </View>
-            </View>
-            <Pressable
-              style={[styles.mediumButtonMedium1, styles.ml10]}
-              onPress={() => navigation.navigate("BeaconSubmission1")}
-            >
-              <View style={styles.master1}>
-                <LinearGradient
-                  style={styles.labelIconLeftChevron1}
-                  locations={[0, 1]}
-                  colors={["#0061c8", "#5aedff"]}
-                >
-                  <View style={styles.spacer1} />
-                  <View style={styles.labelIconLeft1}>
-                    <Image
-                      style={styles.playersIcon}
-                      resizeMode="cover"
-                      source={require("../assets/players-icon.png")}
-                    />
-                    <Text style={[styles.label1, styles.ml8]}>
-                      Create Beacon
-                    </Text>
-                    <View style={[styles.placeholder2, styles.ml8]}>
-                      <Image
-                        style={styles.wrapperIcon2}
-                        resizeMode="cover"
-                        source={require("../assets/wrapper2.png")}
-                      />
-                    </View>
-                  </View>
-                  <Image
-                    style={styles.arrowsDownArrow1}
-                    resizeMode="cover"
-                    source={require("../assets/arrows--down-arrow.png")}
-                  />
-                </LinearGradient>
-              </View>
-            </Pressable>
-          </View>
-          <View style={styles.homeIndicator2}>
-            <View style={styles.homeIndicator1}>
-              <View style={styles.homeIndicator} />
             </View>
           </View>
         </View>
-      </TouchableOpacity>
+      </Pressable>
       <Image
         style={styles.boxingIcon}
         resizeMode="cover"
